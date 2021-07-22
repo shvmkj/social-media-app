@@ -8,11 +8,11 @@ $ mysql -u root
 ```
 
 ```mysql
-create database cbsocialmediadb;
+create database socialdb;
 
-create user cbsocialuser identified with mysql_native_password by 'cbsocialpass';
+create user socialdb identified with mysql_native_password by 'socialmediapass';
 
-grant all privileges on cbsocialmediadb.*  to cbsocialuser;
+grant all privileges on cbsocialmediadb.*  to socialdb;
 
 flush privileges;
 ```
