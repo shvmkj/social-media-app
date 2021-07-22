@@ -12,7 +12,7 @@ create database socialdb;
 
 create user socialdb identified with mysql_native_password by 'socialmediapass';
 
-grant all privileges on cbsocialmediadb.*  to socialdb;
+grant all privileges on socialdb.*  to socialdb;
 
 flush privileges;
 ```
