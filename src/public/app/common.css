@@ -1,0 +1,17 @@
+#navbar{
+    position: sticky;
+    top : 0rem;
+    padding-bottom: 0.2rem ;
+    background-color: var(--light);
+    z-index: 1;
+}
+#footer{
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    position: sticky;
+    bottom: 0px;
+    background-color: var(--light);
+}
+#newTopic{
+    height: 2rem;
+}
