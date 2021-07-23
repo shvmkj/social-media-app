@@ -9,17 +9,19 @@ async function createNewPost(userId,title,body){
 }
 
 async function getAllPost(query){
+    if(!query){
     const posts = await Posts.findAll({
         include : [Users]
     })
-    return posts
+    return posts}
+    const posts = await Posts.findAll({where: { userId: query }})
+return posts
 }
 /*
 async function task(){
-    const posts=await showAllPost()
-    for (let p of posts){
-        console.log(p.title, p.user.username,p.body)
-    }
+    let ans2 =  await getAllPost()
+    
+    console.log(ans2)
 }
 task()*/
 

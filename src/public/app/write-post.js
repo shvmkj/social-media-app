@@ -11,6 +11,7 @@ $('#submitButn').click(function(){
         console.log(title)
         $.post('/api/posts/',{userId,body,title})
         alert('posted')
+        $.get('/api/posts/',{})
     }
     }
 )
