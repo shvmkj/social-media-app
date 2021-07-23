@@ -108,7 +108,9 @@ Get all posts by everyone
 
 2. `POST /posts` 
 
-Create a new post. 
+Create a new post.
+Get all posts by a user
+ 
 Required fields in body - 
 
 ```
